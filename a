@@ -1,3 +1,43 @@
-APR does not understand this error code: Error running context: An error occurred during authentication at /usr/share/perl5/vendor_perl/Git/SVN/Ra.pm line 312.
+#5267 : storage-monの改善(daemonモード)
+ * 環境定義書などの再確認は必要
+  * チケットには、RHE9用しか添付していないなど。。
+#5758 : 【コミュニティの修正PR取り込み追跡】unfencingデバイス(fence_scsi/fence_mpath)を持つクラスタ構成においてDCノードでメモリリー
+ * DTS殿の検証に任せて、クローズで良いのでは？
+  * なお、RHEL10.0ではfence_scsiは、サポートが先送りなる可能性があるので、検証も不要かも。。
+#5746 : 【コミュニティ機能修正】Filesystem："azfns"ファイルシステムタイプの追加
+ * DTS殿の検証に任せて、クローズで良いのでは？
+#5750 : storage-monのデーモン化で起動時間が30秒長くなる
+ * #5267クローズ時に一緒にクローズで良い。
+#5731 : 【コミュニティ機能修正】fence_scsi: slaveデバイスリストの先頭のデバイスにのみ予約の置き換え
+ * DTS殿の検証に任せて、クローズで良いのでは？
+#5059 : fence_kdumpの待ち受けアドレスの複数指定について
+ * DTS殿の検証に任せて、クローズで良いのでは？
+#5062 : Filesystem RA: autofs 利用時の bind マウントの不具合修正
+ * DTS殿の検証に任せて、クローズで良いのでは？
+#5147 : resource-agents: Rocky Linux 上でのRHELとの非互換性の修正(ocf-distro)
+ * DTS殿の検証に任せて、クローズで良いのでは？
+#5164 : OCFMONユーザのパスワードパラメータが指定されていない場合のエラーメッセ
+ * DTS殿の検証に任せて、クローズで良いのでは？
+#5638 : storage-monのdaemonモードにエラーログが不足している
+ * すでに、#5756 : 【RHEL10対応】RHEL10.0差分調査で、追加でdaemonモードのログも確認済。
+ * #5267クローズ時に一緒にクローズで良い。
+#5648 : 【コミュニティ機能修正】pgsql RA :ログ出力の抑制修正
+ * pm_extra_tools 1.7には反映されているので、#5764クローズ時に一緒にクローズで良い。
+#5788 : Filesystemリソース作成時にpcsコマンドがWarningを出力す
+ * DTS殿の検証に任せて、クローズで良いのでは？
+#4111 : watchdogサービスを利用した環境を構築後、クラスタ起動前に/var/log/watchdog/test-bin.stderr
+ * すでに#5756で、オプションの追加も変更点としてし敵済なので、
+ * DTS殿の検証に任せて、クローズで良いのでは？
+---
+#5838 : 【pm_extra_tools】RHEL10.0でのmake rpm実行時にwarningが出力され
+ * RHEL9の問題でないが。。。マイルストーン上は仕方ないかな...
+ * #5764クローズ時に一緒にクローズで良い。
+ * 以下の辺りも同じ。。。
+  * #5803 : 【pm_extra_tools】pm_pcsgen実行時に「chardetモジュールがない」旨のエラーが出力される。
+#5731 : 【コミュニティ機能修正】fence_scsi: slaveデバイスリストの先頭のデバイスにのみ予約の置き換え
+ * DTS殿の検証に任せて、クローズで良いのでは？
 
+
+
+ 
 
